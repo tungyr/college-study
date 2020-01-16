@@ -3,9 +3,10 @@
 
 int main()
 {
-    std::cout << "Enter an integer: ";
-	int number;
-	std::cin >> number;
-	convert(number);
+    //std::cout << "enter an integer: ";
+	//int number;
+	//std::cin >> number;
+	convert(255);
+
 }
 
