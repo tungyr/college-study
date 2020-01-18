@@ -1,3 +1,5 @@
 #pragma once
+#include <string>
+using namespace std;
 
-int convert(int number);
+string convert(int number);

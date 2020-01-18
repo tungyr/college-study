@@ -5,7 +5,7 @@ using namespace std;
 
 
 
-int convert(int number)
+string convert(int number)
 {
 	std::string bin = "";
 	std::string bin_new = "";
@@ -38,9 +38,9 @@ int convert(int number)
 		swap(bin[i], bin[n]);
 		n = n - 1;
 
-	std::cout << bin;
+	//std::cout << bin;
 
-	return;
+	return bin;
 
 	
 } 
