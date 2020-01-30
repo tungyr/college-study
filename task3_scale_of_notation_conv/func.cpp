@@ -26,11 +26,18 @@ string convert(int number)
 
 	}
 
+	bin_new = ""; 
+	counter = 0;
+
 	int len = bin.length();
-	int n = len - 1;
-	for (int i = 0; i < (len / 2); i++)
-		std::swap(bin[i], bin[n]);
-		n = n - 1;
+	while (counter != len)
+	{
+		std::cout << bin[counter];
+		bin_new = bin_new + bin[counter];
+		if (counter == 4)
+			bin_new = bin_new + ' ';
+	}
+
 
 	//std::string bin_final = "";
 	//for (int j = 0; j < (len + 1); j++)
@@ -43,7 +50,7 @@ string convert(int number)
 
 	//std::cout << bin;
 
-	return bin;
+	return bin_new;
 
 	
 } 
