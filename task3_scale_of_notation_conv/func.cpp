@@ -26,31 +26,18 @@ string convert(int number)
 
 	}
 
-	bin_new = ""; 
-	counter = 0;
-
-	int len = bin.length();
-	while (counter != len)
-	{
-		std::cout << bin[counter];
-		bin_new = bin_new + bin[counter];
-		if (counter == 4)
-			bin_new = bin_new + ' ';
-	}
-
-
-	//std::string bin_final = "";
-	//for (int j = 0; j < (len + 1); j++)
-	//	if (j == 4){
-	//		bin_final = bin_final + " ";
-	//	}
-	//	else{
-	//		bin_final = bin_final + bin[j];
-	//	}
-
-	//std::cout << bin;
-
-	return bin_new;
+	counter = bin.length() - 1;
+	bin_new = bin[counter];
 
 	
+	while (counter != 0)
+	{
+		bin_new = bin_new + bin[counter - 1];
+		if (counter + 3 == bin.length())
+			bin_new = bin_new + ' ';
+		counter -= 1;
+	}
+
+	return bin_new;
+		
 } 
