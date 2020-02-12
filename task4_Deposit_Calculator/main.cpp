@@ -10,8 +10,8 @@ int main()
 	int deposit_time;
 	std::cin >> deposit_time;
 
-	std::cout << "Monthly revenue from deposit "    << deposit_calc(deposit, deposit_time);
-	std::cout << "Whole time revenue from deposit " << deposit_calc(deposit, deposit_time);
-	std::cout << "Whole revenue plus deposit body " << deposit_calc(deposit, deposit_time);
+	std::cout << "Monthly revenue from deposit "    << deposit_calc(deposit, deposit_time) << std::endl;
+	std::cout << "Whole time revenue from deposit " << deposit_calc(deposit, deposit_time) << std::endl;
+	std::cout << "Whole revenue plus deposit body " << deposit_calc(deposit, deposit_time) << std::endl;
 
 }
